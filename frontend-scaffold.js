@@ -30,21 +30,10 @@ try {
     fs.mkdirSync(`${folderName}/css`);
     fs.writeFileSync(`${folderName}/css/style.css`, cssText);
     fs.mkdirSync(`${folderName}/js`);
-    fs.writeFileSync(`${folderName}/js/index.js`, jsText);
+    fs.writeFileSync(`${folderName}/js/script.js`, jsText);
     fs.mkdirSync(`${folderName}/images`);
     console.log(`“Frontend scaffold created successfully!”`);
   }
 } catch (err) {
   console.error(err);
 }
-
-// const content = "Some content!";
-
-// try {
-//   fs.writeFileSync("index.js", content);
-//   //file written successfully
-// } catch (err) {
-//   console.error(err);
-// }
-
-// console.log(fs.readFileSync("index.js", "utf8"));
